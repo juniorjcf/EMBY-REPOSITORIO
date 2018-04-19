@@ -1,0 +1,506 @@
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.headerLogo {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6.9vw;
+    height: 3.7vh;
+    min-height: 40px;
+    min-width: 74px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.pageTitle {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    height: 5.6vh;
+    text-transform: capitalize;
+}
+
+.pageTitleWithLogo {
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20.83vw;
+}
+
+.headerAudioPlayerButton {
+    color: #E81123 !important;
+}
+
+.headerBackButton {
+    margin-left: -1.6vw;
+    padding: 0 4px;
+}
+
+.mouseIdle .headerBackButton {
+    display: none;
+}
+
+.headerButton {
+    vertical-align: middle;
+    margin: 0 .5em;
+}
+
+.searchButtonContainer {
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.headerUserButton img {
+    border-radius: 1000px;
+}
+
+.skinHeader {
+    /* This will ensure it is on top of the main body */
+    z-index: 1;
+    /* padding-top: 3vh; */
+    /* padding-bottom: 2.4vh; */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11vh;
+}
+
+.headerLeft {
+    margin-left: 2.3%;
+    display: flex;
+    align-items: center;
+}
+
+.headerRight {
+    margin-right: 2.3%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.headerClock {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+@media all and (max-width: 720px) {
+
+    .headerClock {
+        display: none !important;
+    }
+}
+
+.layout-mobile .headerClock {
+    display: none !important;
+}
+
+.pageContainer, .externalPageContainer {
+    padding-top: 11vh;
+    overflow: hidden;
+    contain: layout style;
+}
+
+    .pageContainer.flex {
+        padding-top: 11vh;
+        overflow: hidden;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        contain: strict;
+    }
+
+    .pageContainer.vertical.fullWidth {
+        display: block;
+        width: 94.5%;
+        margin: auto;
+    }
+
+    .pageContainer.vertical.centered {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+@media all and (min-width: 1280px) {
+
+    .pageContainer.vertical.centered {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+.itemScrollFrame.scrollFrameX .scrollSlider {
+    padding-left: 4.5%;
+}
+
+.userViewNames {
+    padding-left: 3.75%;
+}
+
+.itemScrollFrame.scrollFrameX {
+    overflow: hidden;
+}
+
+    .itemScrollFrame.scrollFrameX .scrollSlider {
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+    }
+
+    .itemScrollFrame.scrollFrameX.noTopPadding .scrollSlider {
+        padding-top: 2.74vh;
+    }
+
+.itemScrollFrame.scrollFrameY {
+    height: 100%;
+    /* Needed for native scroll */
+    display: flex;
+}
+
+.scrollFrameY > .scrollSlider {
+    padding: 0 2%;
+    /* Needed for native scroll */
+    flex-grow: 1;
+}
+
+.horizontalPageContent h1 {
+    margin-top: 0;
+}
+
+.scrollFrameY {
+    overflow: hidden;
+}
+
+.scrollFrameX .scrollSlider {
+    white-space: nowrap !important;
+}
+
+::-webkit-scrollbar {
+    width: 1vh;
+    height: 1vh;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+    -webkit-border-radius: 2px;
+    background: #888 no-repeat center;
+}
+
+.cardColumn {
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .cardColumn .card:not(.hide) {
+        display: block !important;
+    }
+
+.userViewNames h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.userViewNames .btnUserViewHeader {
+    min-width: initial;
+    text-transform: none !important;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: .2em;
+}
+
+.listNumbers {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+}
+
+    .listNumbers .selectedIndex {
+        color: #4CAF50;
+    }
+
+.horizontalSection {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1.25em;
+}
+
+    .horizontalSection .sectionTitle {
+        font-size: 90%;
+        padding-left: .1em;
+    }
+
+.mediaInfoItem {
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+
+i.mediaInfoItem {
+    width: 4vh;
+    height: 4vh;
+    margin-right: .6em;
+}
+
+.mediaInfoItem:last-child {
+    margin-right: 0;
+}
+
+.listItemMediaInfo {
+    color: #bbb !important;
+}
+
+.selectedItemInfo {
+    position: fixed;
+    bottom: .5%;
+    left: 0;
+    right: 10%;
+    max-width: 60%;
+    font-size: 84%;
+    color: #ccc;
+    /*position: relative;
+    margin: auto;*/
+}
+
+.homePageContainer .selectedItemInfo {
+    right: 2%;
+    bottom: 2.5%;
+}
+
+.selectedItemInfo h2 {
+    margin: 0;
+}
+
+.selectedItemMediaInfo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+    .selectedItemMediaInfo i {
+        width: 2.96vh;
+        height: 2.96vh;
+    }
+
+    .selectedItemMediaInfo .starRatingContainer i {
+        width: 2.96vh;
+        height: 2.96vh;
+    }
+
+.selectedItemInfoInnerWithLogo {
+    padding-left: 18%;
+}
+
+.selectedItemInfoLogo {
+    position: absolute;
+    top: 12.5%;
+    width: 16%;
+    bottom: 12.5%;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.selectedItemInfoInner > div {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Need to use :not due to conflict with loginSquareCard */
+.horizontalPageContent .squareCard:not(.scalableCard) .cardImageContainer {
+    width: 20.83vh;
+    height: 20.83vh;
+}
+
+.horizontalPageContent .backdropCard .cardImageContainer {
+    width: 37.04vh;
+    height: 20.83vh;
+}
+
+.horizontalPageContent .portraitCard .cardImageContainer {
+    width: 21.02vh;
+    height: 31.57vh;
+}
+
+.homePageContent .squareCard:not(.scalableCard) .cardImageContainer {
+    width: 21.85vh;
+    height: 21.85vh;
+}
+
+.homePageContent .backdropCard .cardImageContainer {
+    width: 38.89vh;
+    height: 21.85vh;
+}
+
+.homePageContent .portraitCard .cardImageContainer {
+    width: 21.94vh;
+    height: 32.96vh;
+}
+
+.listPageContent .squareCard:not(.scalableCard) .cardImageContainer {
+    width: 21.5vh;
+    height: 21.5vh;
+}
+
+.listPageContent .backdropCard .cardImageContainer {
+    width: 38.222vh;
+    height: 21.5vh;
+}
+
+.listPageContent .portraitCard .cardImageContainer {
+    width: 21.7333vh;
+    height: 32.6vh;
+}
+
+.loginSquareCard {
+    width: 54vw;
+    flex-shrink: 0;
+    display: inline-block !important;
+}
+
+@media (orientation: landscape) {
+    .loginSquareCard {
+        width: 40vh;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+
+    .loginSquareCard {
+        width: 50vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+
+    .loginSquareCard {
+        width: 26vw;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    .loginSquareCard {
+        width: 18vw;
+    }
+}
+
+.itemProgressBar {
+    height: .56vh;
+}
+
+.playlistPageContainer {
+    display: block;
+    width: 70%;
+    margin: 0 auto 0;
+    bottom: 0;
+}
+
+.playlistIndexIndicatorImage {
+    background-size: initial !important;
+    background-image: url(images/equalizer_white.gif) !important;
+}
+
+.repeatActive {
+    color: #52B54B;
+}
+
+.listItemsMoreButtonContainer {
+    text-align: right;
+}
+
+.listItemsMoreButton {
+    margin: .25em .25em .25em 0 !important;
+    padding: .3em .7em !important;
+    font-size: 84% !important;
+    text-transform: uppercase;
+    min-width: initial;
+    margin-left: auto;
+}
+
+.selectedItemPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 18%;
+    background-color: rgb(20, 20, 20);
+    z-index: 1;
+}
+
+.selectedItemPanelImage {
+    height: 18%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.selectedItemPanelContent {
+    padding: 1em;
+}
+
+.listPageButtons {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+    .listPageButtons button {
+        padding: .2em .8em .35em;
+        text-transform: none;
+        font-size: 86%;
+    }
+
+
+.verticalSection {
+    margin-bottom: 6.5vh;
+}
+
+    .verticalSection > h2 {
+        margin-bottom: .25em;
+    }
+
+.mainSection .itemPageButtons button {
+    padding: .5em 1.2em;
+    text-transform: none;
+    margin: 0 .15em 0 0;
+}
+
+button.mini {
+    font-size: 90%;
+}
+
+.horizontalItemsContainer {
+    display: flex;
+}
+
+.xlargePaperIconButton {
+    font-size: 2.3em !important;
+}
+
+
+
+
+.settingsIcon {
+    background-color: #E81123 !important;}

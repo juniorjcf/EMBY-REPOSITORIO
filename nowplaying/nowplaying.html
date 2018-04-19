@@ -1,0 +1,49 @@
+<div class="pageContainer nowPlayingPageContainer flex" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+
+    <div class="nowPlayingCardContainer">
+
+    </div>
+    <div class="nowPlayingInfoContainer" style="text-align: left;">
+        <h1 class="nowPlayingMetadata">&nbsp;<br />&nbsp;<br />&nbsp;</h1>
+        <div class="nowPlayingProgressContainer">
+            <div class="sliderContainer" style="flex-grow:1;margin-left:.5em;">
+                <input type="range" step=".1" min="0" max="100" value="0" is="emby-slider" class="nowPlayingPositionSlider" />
+            </div>
+            <div class="nowPlayingTime"><span class="nowPlayingPositionText"></span><span class="nowPlayingDurationText"></span></div>
+        </div>
+        <div class="nowPlayingButtonsContainer">
+            <div>
+                <button is="paper-icon-button-light" class="btnPreviousTrack autoSize" disabled>
+                    <i class="xlargePaperIconButton md-icon">&#xE045;</i>
+                </button>
+                <button is="paper-icon-button-light" class="btnPause autoSize" autofocus>
+                    <i class="xlargePaperIconButton md-icon">&#xE034;</i>
+                </button>
+                <button is="paper-icon-button-light" class="btnStop autoSize">
+                    <i class="xlargePaperIconButton md-icon">&#xE047;</i>
+                </button>
+                <button is="paper-icon-button-light" class="btnNextTrack autoSize" disabled>
+                    <i class="xlargePaperIconButton md-icon">&#xE044;</i>
+                </button>
+                <button is="paper-icon-button-light" class="btnPlaylist autoSize">
+                    <i class="xlargePaperIconButton md-icon">&#xE5D2;</i>
+                </button>
+                <button is="paper-icon-button-light" class="btnRepeat autoSize">
+                    <i class="xlargePaperIconButton md-icon">&#xE040;</i>
+                </button>
+            </div>
+            <div class="nowPlayingSecondaryButtons">
+                <div class="userDataIcons">
+                </div>
+
+                <button is="paper-icon-button-light" class="buttonMute autoSize">
+                    <i class="xlargePaperIconButton md-icon">&#xE050;</i>
+                </button>
+
+                <div class="sliderContainer" style="width:30%;">
+                    <input is="emby-slider" type="range" step="1" min="0" max="100" value="0" class="nowPlayingVolumeSlider" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
